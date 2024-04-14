@@ -4,12 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
+    <title>Project | Coffee</title>
 </head>
 
 <body>
-    start
+    <header>
+        <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="logo">
+        </a>
+
+        <box-icon name='menu' id="menu-icon"></box-icon>
+
+        <ul class="navbar">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="products">Products</a></li>
+            <li><a href="customers">Customers</a></li>
+        </ul>
+
+        <div class="header-icon">
+            <box-icon name='cart' type='solid'></box-icon>
+            <box-icon name='search' id="search-icon"></box-icon>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+        </div>
+    </header>
+
+
 
     <script src="./assets/js/main.js"></script>
 </body>
