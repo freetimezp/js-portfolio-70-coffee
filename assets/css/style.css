@@ -221,7 +221,7 @@ header box-icon:hover {
 }
 
 .heading h2 {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
 }
 
@@ -276,12 +276,43 @@ header box-icon:hover {
 
 
 
+.customers-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
 
+.customers-container .box {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+}
 
+.stars box-icon {
+    fill: var(--main-color);
+}
 
+.customers-container .box p {
+    font-size: 0.95rem;
+    max-width: 500px;
+    margin: auto;
+}
 
+.customers-container .box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+.customers-container .box:hover {
+    transition: .2s ease-in-out;
+    background-color: var(--second-color);
+}
 
-
-
+.customers-container .box:hover img {
+    transform: scale(1.05);
+}
 
