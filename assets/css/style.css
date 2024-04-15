@@ -16,6 +16,7 @@
     --second-color: #edeae3;
     --text-color: #1b1b1b;
     --bg-color: #fff;
+    --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
 }
 
 img {
@@ -25,6 +26,10 @@ img {
 body {
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
+}
+
+section {
+    padding: 50px 100px;
 }
 
 header {
@@ -86,11 +91,20 @@ header box-icon:hover {
 
 .search-box {
     position: absolute;
-    top: 100%;
+    top: -100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.3);
     background: var(--bg-color);
     width: 100%;
+    opacity: 0;
+}
+
+.search-box.active {
+    top: 110%;
+    box-shadow: var(--box-shadow);
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    transition: .3s ease-in-out;
 }
 
 .search-box input {
@@ -108,7 +122,45 @@ header box-icon:hover {
 }
 
 
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/bg.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
 
+.home-text h1 {
+    font-size: 3.4rem;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-text p {
+    font-size: 0.95rem;
+    color: var(--bg-color);
+    margin: 0.5rem 0 3.4rem;
+    width: 500px;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: .3rem;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn:hover {
+    background: #8a6f4d;
+}
 
 
 
