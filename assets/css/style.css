@@ -419,6 +419,93 @@ header box-icon:hover {
 
 
 
+@media (max-width: 600px) {
+    header {
+        padding: 10px 40px;
+    }
+    section {
+        padding: 60px 20px;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+
+
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .customers-container {
+        grid-template-columns: 1fr;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        height: 10px;
+        top: -400%;
+        position: absolute;
+        opacity: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+        background: #272727;
+    }
+
+    .navbar.active {
+        padding: 40px 50px;
+        opacity: 1;
+        top: 100px;
+        height: auto;
+        transition: .4s ease-in;
+    }
+
+    .home {
+        grid-row: reverse;
+        grid-template-columns: 1fr;
+        padding-top: 120px;
+    }
+    .home-text {
+        text-align: center;
+    }
+
+    .home-text p {
+        width: 350px;
+        margin: 20px auto 40px;
+    }
+    .search-box {
+        width: 90%;
+    }
+
+
+    .about-text {
+        text-align: center;
+        padding-left: unset;
+        padding: 0 10px;
+    }
+    .about-text p {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
