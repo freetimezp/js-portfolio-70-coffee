@@ -14,7 +14,7 @@
 :root {
     --main-color: #bc9667;
     --second-color: #edeae3;
-    --text-color: #1b1b1b;
+    --text-color: rgb(27, 27, 27);
     --bg-color: #fff;
     --box-shadow: 2px 2px 10px 4px rgb(14 55 54 / 15%);
 }
@@ -44,6 +44,11 @@ header {
     padding: 18px 100px;
     transition: .5s linear;
     background: var(--text-color);
+}
+
+header.shadow {
+    background: rgba(27, 27, 27, .9);
+    box-shadow: var(--box-shadow);
 }
 
 .logo img {
@@ -315,4 +320,107 @@ header box-icon:hover {
 .customers-container .box:hover img {
     transform: scale(1.05);
 }
+
+
+
+
+.footer {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1.5rem;
+}
+
+.footer-box h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.social box-icon {
+    fill: var(--secondary-color);
+    width: 32px;
+    height: 32px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.social box-icon:hover {
+    transform: translateY(-4px);
+    fill: var(--main-color);
+}
+
+.footer-box h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box ul  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+}
+
+.footer-box ul li a {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.footer-box ul li:hover {
+    transform: translateX(4px);
+    transition: .3s;
+}
+
+.footer-box ul li:hover a {
+    color: #8a6f4d;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contact span box-icon {
+    fill: #8a6f4d;
+    padding-right: 5px;
+    width: 32px;
+    height: 32px;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px dashed #bc9667;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
